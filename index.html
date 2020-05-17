@@ -9,13 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,900|Note+Sans+JP:100,300,400,500,700,900&display=swap"
+    />
     <title>Andrew Perera</title>
   </head>
   <body>
     <div class="section">
       <header class="header flexr j-between a-center">
         <a class="branding" href="#">
-          <h3>Logo</h3>
+          <img class="header-logo" src="img/logo.png" />
         </a>
         <div class="nav-links flexr a-center">
           <a
@@ -78,8 +82,10 @@
       <img src="img/airplane.png" class="plane right" />
       <img src="img/airplane.png" class="plane left" />
       <div class="self fade-in">
-        <div class="flexr a-center m-v-1">
-          <h1 class="me">Andrew Perera.</h1>
+        <div class="name flexr a-center m-v-1">
+          <h1 class="me">
+            Andrew Perera.
+          </h1>
           <div class="name-indicator flicker"></div>
         </div>
         <p class="my-story text-center">
@@ -99,24 +105,24 @@
       </p>
     </div>
     <div class="skills flexr j-center a-center alt-background">
-      <div class="skill-card flexc fade-in rounded full-border">
+      <div class="skill-card flexc fade-in rounded shadow">
         <div class="skill-card-content">
           <div
             class="m-h-2 skill-card-header flexr j-center a-center bottom-border"
           >
             <i class="fas fa-server primary-text"></i>
-            <h3 class="p-v-2 m-h-1 black-text">Backend Developer</h3>
+            <h3 class="p-v-2 m-h-1 black-text">Backend Development</h3>
           </div>
           <div class="skills-wrapper">
             <div
               class="skill-item flexr j-center a-center full-border rounded m-v-1"
             >
-              <p class="skill-item-title">ExpressJS</p>
+              <p class="skill-item-title">NodeJS / ExpressJS</p>
             </div>
             <div
               class="skill-item flexr j-center a-center full-border rounded m-v-1"
             >
-              <p class="skill-item-title">NodeJS GraphQL (Apollo Server)</p>
+              <p class="skill-item-title">GraphQL (Apollo Server)</p>
             </div>
             <div
               class="skill-item flexr j-center a-center full-border rounded m-v-1"
@@ -143,19 +149,19 @@
           </div>
         </div>
       </div>
-      <div class="skill-card flexc fade-in rounded full-border m-v-2">
+      <div class="skill-card flexc fade-in rounded m-v-2 shadow">
         <div class="skill-card-content">
           <div
             class="m-h-2 skill-card-header flexr j-center a-center bottom-border"
           >
             <i class="fas fa-laptop primary-text"></i>
-            <h3 class="p-v-2 m-h-1 black-text">Frontend Developer</h3>
+            <h3 class="p-v-2 m-h-1 black-text">Frontend Development</h3>
           </div>
           <div class="skills-wrapper">
             <div
               class="skill-item flexr j-center a-center full-border rounded m-v-1"
             >
-              <p class="skill-item-title">ReactJS / React Native</p>
+              <p class="skill-item-title">ReactJS & React Native</p>
             </div>
             <div
               class="skill-item flexr j-center a-center full-border rounded m-v-1"
@@ -185,7 +191,7 @@
           </div>
         </div>
       </div>
-      <div class="skill-card flexc fade-in rounded full-border m-v-2">
+      <div class="skill-card flexc fade-in rounded m-v-2 shadow">
         <div class="skill-card-content">
           <div
             class="m-h-2 skill-card-header flexr j-center a-center bottom-border"
@@ -218,28 +224,99 @@
         </div>
       </div>
     </div>
-    <div
-      id="projects"
-      class="section flexc alt-background"
-      style="height: 500px;"
-    >
-      <h1 class="m-v-2 text-center">Recent Projects</h1>
-      <div class="project flexc">
-        <div>
-          <h3>Compass</h3>
-          <p>Artificial Intelligence Institute at UofSC</p>
+
+    <div class="section flexc white">
+      <p class="toolbox-info body-text text-center">
+        In addition to my work using these tools, I also have experience with
+        database schema design and various query languages.
+      </p>
+      <div class="databases flexr j-center rounded p-1 white shadow m-v-2">
+        <div class="db flexc">
+          <h3 class="db-header bottom-border p-v-2 primary-border">Neo4J</h3>
+          <div class="db-content flexc j-between p-1">
+            <div>
+              <p class="db-experience-section-header">Experience</p>
+              <p class="db-experience">Cypher Query Language</p>
+              <p class="db-experience">Schema Design</p>
+              <p class="db-experience">Efficient Query Design</p>
+              <p class="db-experience">Efficient Batch Storage</p>
+            </div>
+            <div>
+              <p class="db-experience-section-header">
+                Used with...
+              </p>
+              <p class="db-experience">Javascript / NodeJS, GraphQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="db flexc">
+          <h3 class="db-header bottom-border p-v-2 primary-border">MongoDB</h3>
+          <div class="db-content flexc j-between p-1">
+            <div>
+              <p class="db-experience-section-header">Experience</p>
+              <p class="db-experience">Schema Design</p>
+            </div>
+            <div>
+              <p class="db-experience-section-header">
+                Used with...
+              </p>
+              <p class="db-experience">Javascript / NodeJS, GraphQL</p>
+            </div>
+          </div>
+        </div>
+        <div class="db flexc m-v-2">
+          <h3 class="db-header bottom-border p-v-2 primary-border">
+            PostgreSQL
+          </h3>
+          <div class="db-content flexc j-between p-1">
+            <div>
+              <p class="db-experience-section-header">Experience</p>
+              <p class="db-experience">Schema Design</p>
+            </div>
+            <div>
+              <p class="db-experience-section-header">
+                Used with...
+              </p>
+              <p class="db-experience">Python / Django</p>
+            </div>
+          </div>
+        </div>
+        <div class="db flexc m-v-2">
+          <h3 class="db-header bottom-border p-v-2 primary-border">RealmDB</h3>
+          <div class="db-content flexc j-between p-1">
+            <div>
+              <p class="db-experience-section-header">Experience</p>
+              <p class="db-experience">Mobile Database Design</p>
+            </div>
+            <div>
+              <p class="db-experience-section-header">
+                Used with...
+              </p>
+              <p class="db-experience">React Native</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="section flexc a-center alt-background">
-      <h1 class="m-v-2">Contact</h1>
-      <div class="flexr a-center">
-        <p>Looking for a developer?</p>
-        <button class="m-h-3 btn-secondary fade-white fade-primary-text">
-          email me
-        </button>
+    <!--
+    <div class="section flexc a-center white">
+      <h1 class="black-text m-v-3">
+        Recent Projects
+      </h1>
+      <div class="projects flexr j-center a-center wrap">
+        <div id="compass" class="project flexc j-end m-3 shadow"></div>
+        <div id="khealth" class="project flexc j-end m-3 shadow"></div>
+        <div id="chatbot" class="project flexc j-end m-3 shadow"></div>
       </div>
     </div>
+    <div class="section flexc a-center white">
+      <h1 class="black-text m-v-3">
+        Contact
+      </h1>
+      <p>Looking for a developer?</p>
+      <a href="pererasys@gmail.com" class="primary-text">Email Me</a>
+    </div>
+    -->
     <footer class="footer p-3 flexr j-end a-center">
       <p>
         Andrew Perera
@@ -249,28 +326,18 @@
   </body>
   <script src="js/jquery.js"></script>
   <script>
-    function isElementInViewport(elem) {
-      var $elem = $(elem);
-
-      // Get the scroll position of the page.
-      var scrollElem =
-        navigator.userAgent.toLowerCase().indexOf("webkit") != -1
-          ? "body"
-          : "html";
-      var viewportTop = $(scrollElem).scrollTop();
+    function isVisible(elem) {
+      var elementTop = elem.offset().top;
+      var elementBottom = elementTop + elem.outerHeight();
+      var viewportTop = $(window).scrollTop();
       var viewportBottom = viewportTop + $(window).height();
-
-      // Get the position of the element on the page.
-      var elemTop = Math.round($elem.offset().top);
-      var elemBottom = elemTop + $elem.height();
-
-      return elemTop < viewportBottom && elemBottom > viewportTop;
+      return elementBottom > viewportTop && elementTop < viewportBottom;
     }
 
-    function maybeStartAnimation() {
-      var $elem = $(".toolkit");
+    function maybeStartSkillsAnimation() {
+      var $elem = $(".skills");
 
-      if (isElementInViewport($elem)) {
+      if (isVisible($elem)) {
         var duration = 250;
         $(".skill-card").each(function (i) {
           var $item = $(this);
@@ -286,8 +353,29 @@
       }
     }
 
+    function maybeStartNameAnimation() {
+      var $elem = $(".name");
+
+      if (isVisible($elem)) {
+        $elem.addClass("active");
+      }
+    }
+
+    function maybeStartDatabasesAnimation() {
+      var $elem = $(".databases");
+
+      if (isVisible($elem)) {
+        $elem.addClass("active");
+      }
+    }
+
+    $(document).ready(function () {
+      maybeStartNameAnimation();
+    });
+
     $(window).scroll(function () {
-      maybeStartAnimation();
+      maybeStartSkillsAnimation();
+      maybeStartDatabasesAnimation();
     });
 
     $("#mobile-menu-trigger").on("click", function () {

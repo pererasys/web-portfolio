@@ -17,9 +17,6 @@ body {
   @media screen and (min-width: $breakpoint-large) {
     padding: 25px 70px 25px 70px;
   }
-  @media screen and (min-width: $breakpoint-xl) {
-    padding: 25px 75px 25px 75px;
-  }
 }
 
 @mixin flex($direction) {
@@ -30,6 +27,10 @@ body {
 @mixin spacing($justification, $alignment) {
   justify-content: $justification;
   align-items: $alignment;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .flexr {
@@ -106,6 +107,14 @@ body {
 
 .accent {
   background-color: $accent;
+}
+
+.white {
+  background-color: $white;
+}
+
+.black {
+  background-color: $black;
 }
 
 .blue {
@@ -202,4 +211,8 @@ body {
 
 .m-v-3 {
   margin: 25px 0px 25px 0px;
+}
+
+.shadow {
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
 }
