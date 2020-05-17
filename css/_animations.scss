@@ -1,0 +1,147 @@
+@import "./variables";
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flicker {
+  opacity: 0;
+  animation: flickerAnimation ease-in-out 1s infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin fadeBackground($color) {
+  &:hover {
+    background-color: $color;
+    transition: 0.3s;
+  }
+}
+
+@mixin fadeText($color) {
+  &:hover {
+    color: $color;
+    transition: 0.3s;
+  }
+}
+
+@mixin rotation($degree, $timing) {
+  -webkit-transition: $timing ease-in-out;
+  -moz-transition: $timing ease-in-out;
+  -o-transition: $timing ease-in-out;
+  transition: $timing ease-in-out;
+  &.active {
+    -webkit-transform: rotate($degree);
+    -moz-transform: rotate($degree);
+    -ms-transform: rotate($degree);
+    transform: rotate($degree);
+  }
+}
+
+.fade-primary {
+  @include fadeBackground($primary);
+}
+
+.fade-accent {
+  @include fadeBackground($accent);
+}
+
+.fade-white {
+  @include fadeBackground($white);
+}
+
+.fade-black {
+  @include fadeBackground($black);
+}
+
+.fade-blue {
+  @include fadeBackground($blue);
+}
+
+.fade-pink {
+  @include fadeBackground($pink);
+}
+
+.fade-orange {
+  @include fadeBackground($orange);
+}
+
+.fade-green {
+  @include fadeBackground($green);
+}
+
+.fade-primary-text {
+  @include fadeText($primary);
+}
+
+.fade-accent-text {
+  @include fadeText($accent);
+}
+
+.fade-black-text {
+  @include fadeText($black);
+}
+
+.fade-white-text {
+  @include fadeText($white);
+}
+
+.fade-blue-text {
+  @include fadeText($blue);
+}
+
+.fade-pink-text {
+  @include fadeText($pink);
+}
+
+.fade-orange-text {
+  @include fadeText($orange);
+}
+
+.fade-green-text {
+  @include fadeText($green);
+}

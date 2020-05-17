@@ -1,0 +1,119 @@
+@import "./variables";
+@import "./animations";
+@import "./fonts";
+
+.introduction {
+  height: 600px;
+  background-image: url("../img/curvelg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  @media screen and (min-width: $breakpoint-small) {
+    background-size: 100% 100px;
+  }
+  @media screen and (min-width: $breakpoint-large) {
+    background-size: 100% 200px;
+  }
+}
+
+.self {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  z-index: 100;
+}
+
+.me {
+  font-family: "Balsamiq Sans", cursive;
+  margin-right: 2.5px;
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 52px;
+  }
+}
+
+.name-indicator {
+  height: 32px;
+  width: 2px;
+  border-radius: 50px;
+  margin-bottom: 2.5px;
+  background-color: $bodyText;
+  @media screen and (min-width: $breakpoint-medium) {
+    height: 50px;
+    margin-bottom: 7.5px;
+  }
+}
+
+.my-story {
+  font-size: 20px;
+  font-weight: 200;
+  color: $bodyText;
+  line-height: 32px;
+}
+
+@keyframes moveClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50%;
+  background-image: url("../img/clouds.png");
+  background-repeat: repeat;
+  background-position: left bottom;
+  background-size: cover;
+  animation: moveClouds 180s linear infinite;
+  z-index: 0;
+  @media screen and (min-width: $breakpoint-small) {
+    margin-bottom: 200px;
+  }
+  @media screen and (min-width: $breakpoint-large) {
+    margin-bottom: 200px;
+  }
+}
+
+@keyframes movePlaneLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes movePlaneRight {
+  0% {
+    left: -10%;
+    visibility: visible;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.plane {
+  position: absolute;
+  height: 10px;
+  width: 25px;
+  &.left {
+    left: 100%;
+    bottom: 35%;
+    animation: movePlaneLeft 240s linear infinite;
+  }
+  &.right {
+    left: -10%;
+    visibility: hidden;
+    bottom: 50%;
+    animation: movePlaneRight 240s linear infinite;
+    animation-delay: 10s;
+    transform: rotate3d(0, 1, 0, 3.142rad);
+  }
+}

@@ -1,0 +1,99 @@
+@import "./variables";
+@import "./fonts";
+
+a {
+  text-decoration: none !important;
+  color: $primary;
+}
+
+.btn {
+  height: 35px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5px;
+  text-transform: uppercase;
+  margin: 5px 0px 5px 0px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $notesans;
+  color: $text;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+
+.btn-no-style {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:disabled,
+button[disabled] {
+  opacity: 0.5;
+  cursor: initial !important;
+}
+
+.btn:focus {
+  opacity: 0.9;
+  transition: 0.25s;
+}
+
+.btn-primary {
+  background-color: $primary;
+}
+
+.btn-accent {
+  background-color: $accent;
+}
+
+@mixin fab($color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $color;
+  color: #000000;
+  &:hover {
+    transition-duration: 0s;
+    color: #ffffff;
+  }
+}
+
+@mixin fill($color) {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 45px 45px $color inset;
+  }
+}
+
+.fab-blue {
+  @include fab($blue);
+  @include fill($blue);
+}
+
+.fab-pink {
+  @include fab($pink);
+  @include fill($pink);
+}
+
+.fab-green {
+  @include fab($green);
+  @include fill($green);
+}
+
+.fab-orange {
+  @include fab($orange);
+  @include fill($orange);
+}
