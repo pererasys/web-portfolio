@@ -39,4 +39,7 @@
     height: 100px;
     opacity: 1;
   }
+  @media screen and (min-width: $breakpoint-medium) {
+    display: none;
+  }
 }

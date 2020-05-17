@@ -7,15 +7,16 @@ $blue: #006eff;
 $orange: #ff5e00;
 $pink: #f85ffd;
 $green: #18cf00;
-$background: #ffffff;
-$altBackground: #f7f7f7;
-$text: #000000;
-$bodyText: #777777;
-$border: #d3d3d3;
-$highlight: #f2f2f2;
+$background: #121212;
+$altBackground: #222222;
+$text: #ffffff;
+$bodyText: #999999;
+$border: #444444;
+$highlight: #333333;
 
 // Breakpoints
 $breakpoint-small: 0px;
-$breakpoint-medium: 768px;
+$breakpoint-small: 450px;
+$breakpoint-medium: 960px;
 $breakpoint-large: 1280px;
 $breakpoint-xl: 1920px;

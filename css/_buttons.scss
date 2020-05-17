@@ -46,7 +46,44 @@ button[disabled] {
 }
 
 .btn-primary {
-  background-color: $primary;
+  padding: 15px 25px 15px 25px;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $primary;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary;
+  cursor: pointer;
+  font-family: $poppins;
+}
+
+.btn-secondary {
+  padding: 15px 25px 15px 25px;
+  border-radius: 100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: $white;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  cursor: pointer;
+  font-family: $poppins;
+  outline: none;
+  &:hover {
+    border-color: $bodyText;
+    animation: border-color 0.3s ease-in-out;
+  }
 }
 
 .btn-accent {
