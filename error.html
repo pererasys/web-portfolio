@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="og:title"
+      content="Andrew Perera - Developer, Designer, Student"
+    />
+    <meta
+      name="og:image"
+      content="http://s3.amazonaws.com/pererasys.com/img/meta-image.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://s3.amazonaws.com/pererasys.com/img/meta-image.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="763" />
+    <meta property="og:image:height" content="521" />
+    <meta property="og:image:alt" content="Pererasys Logo" />
+    <meta name="og:description" content="Web portfolio." />
+
+    <meta property="og:url" content="http://www.pererasys.com" />
+    <meta
+      name="keywords"
+      content="software developer, developer, software, portfolio, resume"
+    />
+    <meta name="author" content="Andrew Perera" />
+    <link rel="icon" href="./favico.ico" />
+    <link rel="stylesheet" href="assets/css/error.css" />
+    <link rel="stylesheet" href="assets/fonts/FontAwesome/css/all.css" />
+    <title>Andrew Perera - Developer, Designer, Student</title>
+  </head>
+  <body>
+    <div class="section">
+      <header class="header flexr j-between a-center">
+        <a class="branding" href="http://www.pererasys.com">
+          <img class="header-logo" src="assets/img/logo-white.png" />
+        </a>
+        <div class="nav-links flexr a-center">
+          <a
+            class="nav-item fade-white-text"
+            href="https://www.github.com/pererasys"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a
+            class="nav-item fade-white-text"
+            href="https://www.linkedin.com/in/andrew-perera-257495176/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="header-menu">
+          <a
+            id="mobile-menu-trigger"
+            class="nav-item fade-white-text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+          <a
+            id="close-mobile-menu-trigger"
+            class="nav-item hidden fade-white-text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+      </header>
+      <div id="menu" class="mobile-menu flexr j-center a-center">
+        <a
+          class="nav-item fade-white-text"
+          href="https://www.github.com/pererasys"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a
+          class="nav-item fade-white-text"
+          href="https://www.linkedin.com/in/andrew-perera-257495176/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="error flexc j-center a-center">
+      <h1 class="oops text-center body-text">Oops!</h1>
+      <p class="info white-text text-center">
+        We couldn't find the page you were looking for.
+      </p>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script>
+      $("#mobile-menu-trigger").on("click", function () {
+        // Hide trigger
+        var $trigger = $(this);
+        $trigger.addClass("hidden");
+
+        // Show close trigger
+        var $close = $("#close-mobile-menu-trigger");
+        $close.removeClass("hidden");
+
+        // Expand menu
+        var $elem = $("#menu");
+        $elem.addClass("expanded");
+      });
+
+      $("#close-mobile-menu-trigger").on("click", function () {
+        // Hide close trigger
+        var $close = $(this);
+        $close.addClass("hidden");
+
+        // Show trigger
+        var $trigger = $("#mobile-menu-trigger");
+        $trigger.removeClass("hidden");
+
+        // Expand menu
+        var $elem = $("#menu");
+        $elem.removeClass("expanded");
+      });
+    </script>
+  </body>
+</html>

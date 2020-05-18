@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="239.76111"
+   inkscape:export-xdpi="239.76111"
+   inkscape:export-filename="/Users/andrewperera/Documents/Projects/portfolio/src/img/logo-primary.png"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg3330"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="favico.svg">
+  <defs
+     id="defs3324">
+    <rect
+       x="-69.51527"
+       y="-32.561352"
+       width="43.046658"
+       height="66.961468"
+       id="rect4359" />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect4227"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4223">
+      <path
+         id="path4225"
+         d="m 154.19315,112.48274 c 0.29241,-0.0484 1.06794,-0.33613 1.72343,-0.63929 2.58241,-1.19441 4.60515,-3.88816 5.06693,-6.74781 0.0689,-0.42679 0.0986,0.99663 0.0728,3.48545 l -0.0436,4.20685 -3.67636,-0.0536 c -2.02199,-0.0295 -3.67599,-0.0783 -3.67555,-0.1086 5.3e-4,-0.0302 0.24003,-0.0946 0.53244,-0.14303 z"
+         style="display:block;fill:#008000;fill-opacity:1;stroke:none;stroke-width:10.6895;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4267">
+      <rect
+         style="fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:36.4585;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4269"
+         width="75.475174"
+         height="83.382042"
+         x="47.399254"
+         y="-165.24741"
+         rx="0"
+         ry="0"
+         transform="matrix(0.24865729,0.96859153,-0.99880062,0.04896242,0,0)" />
+    </clipPath>
+    <clipPath
+       id="clipPath1023"
+       clipPathUnits="userSpaceOnUse">
+      <rect
+         transform="rotate(-30.22979)"
+         inkscape:transform-center-y="-11.244189"
+         inkscape:transform-center-x="224.74635"
+         ry="0"
+         rx="0"
+         y="33.258099"
+         x="55.78487"
+         height="88.164833"
+         width="71.282211"
+         id="rect1025"
+         style="fill:#4c00ff;fill-opacity:1;stroke:none;stroke-width:28.2379;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="71.749277"
+     inkscape:cy="236.15369"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4347"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showborder="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3327">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:52.0966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d=""
+       id="path4111"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:52.0966;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d=""
+       id="path4113"
+       transform="scale(0.26458333)" />
+    <g
+       id="g4347"
+       transform="translate(-1.0334191,-14.471107)">
+      <g
+         transform="matrix(1.2354974,0,0,1.2354974,-14.573117,-15.547796)"
+         id="g857">
+        <path
+           transform="rotate(179.61064,111.25204,34.284985)"
+           clip-path="url(#clipPath1023)"
+           sodipodi:type="rect"
+           ry="15.632205"
+           rx="15.811431"
+           y="-23.758154"
+           x="112.29655"
+           height="53.293839"
+           width="69.632996"
+           id="path853"
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:12.3343;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 128.10798,-23.758154 h 38.01013 c 8.75953,0 15.81143,6.971964 15.81143,15.6322051 V 13.90348 c 0,8.660241 -7.0519,15.632205 -15.81143,15.632205 h -38.01013 c -8.75953,0 -15.81143,-6.971964 -15.81143,-15.632205 V -8.1259489 c 0,-8.6602411 7.0519,-15.6322051 15.81143,-15.6322051 z" />
+        <path
+           transform="matrix(0.48952356,-0.30095151,0.30095151,0.48952356,10.536802,47.012123)"
+           inkscape:transform-center-y="-16.437279"
+           inkscape:transform-center-x="-7.4047775"
+           inkscape:randomized="0"
+           inkscape:rounded="0"
+           inkscape:flatsided="false"
+           sodipodi:arg2="2.1176396"
+           sodipodi:arg1="1.070442"
+           sodipodi:r2="31.571598"
+           sodipodi:r1="63.143204"
+           sodipodi:cy="72.265228"
+           sodipodi:cx="24.151068"
+           sodipodi:sides="3"
+           id="path855"
+           style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:20.0796;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           sodipodi:type="star"
+           d="M 54.443165,127.66787 7.7340438,99.232748 -38.975078,70.797631 9.0050224,44.563909 56.985117,18.33018 55.714137,72.999028 Z" />
+      </g>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect859"
+         width="134.15302"
+         height="134.15302"
+         x="-5.2596164"
+         y="-0.98927224"
+         inkscape:export-filename="/Users/andrewperera/Documents/Projects/portfolio/src/favico.png"
+         inkscape:export-xdpi="242.35013"
+         inkscape:export-ydpi="242.35013" />
+    </g>
+  </g>
+</svg>

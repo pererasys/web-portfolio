@@ -1,0 +1,215 @@
+@import "./variables";
+
+html,
+body {
+  margin: 0;
+  background-color: $background;
+  overflow-x: hidden;
+}
+
+.section {
+  overflow: hidden;
+  padding: 2.5%;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin spacing($justification, $alignment) {
+  justify-content: $justification;
+  align-items: $alignment;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flexr {
+  @include flex(row);
+}
+
+.flexc {
+  @include flex(column);
+}
+
+.flexr-reverse {
+  @include flex(row-reverse);
+}
+
+.flexc-reverse {
+  @include flex(column-reverse);
+}
+
+.center {
+  @include spacing(center, center);
+}
+
+.j-center {
+  justify-content: center !important;
+}
+
+.j-between {
+  justify-content: space-between !important;
+}
+
+.j-end {
+  justify-content: flex-end !important;
+}
+
+.j-around {
+  justify-content: space-around !important;
+}
+
+.a-center {
+  align-items: center !important;
+}
+
+.a-between {
+  align-items: space-between !important;
+}
+
+.a-end {
+  align-items: flex-end !important;
+}
+
+.a-around {
+  align-items: space-around !important;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.alt-background {
+  background-color: $altBackground;
+}
+
+.background {
+  background-color: $background;
+}
+
+.highlight {
+  background-color: $highlight;
+}
+
+.primary {
+  background-color: $primary;
+}
+
+.accent {
+  background-color: $accent;
+}
+
+.white {
+  background-color: $white;
+}
+
+.black {
+  background-color: $black;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.pink {
+  background-color: $pink;
+}
+
+.orange {
+  background-color: $orange;
+}
+
+.green {
+  background-color: $green;
+}
+
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 15px;
+}
+
+.p-3 {
+  padding: 25px;
+}
+
+.p-4 {
+  padding: 50px;
+}
+
+.p-h-1 {
+  padding: 0px 10px 0px 10px;
+}
+
+.p-h-2 {
+  padding: 0px 15px 0px 15px;
+}
+
+.p-h-3 {
+  padding: 0px 25px 0px 25px;
+}
+
+.p-v-1 {
+  padding: 10px 0px 10px 0px;
+}
+
+.p-v-2 {
+  padding: 15px 0px 15px 0px;
+}
+
+.p-v-3 {
+  padding: 25px 0px 25px 0px;
+}
+
+.m-1 {
+  margin: 10px;
+}
+
+.m-2 {
+  margin: 15px;
+}
+
+.m-3 {
+  margin: 25px;
+}
+
+.m-4 {
+  margin: 50px;
+}
+
+.m-h-1 {
+  margin: 0px 10px 0px 10px;
+}
+
+.m-h-2 {
+  margin: 0px 15px 0px 15px;
+}
+
+.m-h-3 {
+  margin: 0px 25px 0px 25px;
+}
+
+.m-v-1 {
+  margin: 10px 0px 10px 0px;
+}
+
+.m-v-2 {
+  margin: 15px 0px 15px 0px;
+}
+
+.m-v-3 {
+  margin: 25px 0px 25px 0px;
+}
+
+.m-v-4 {
+  margin: 50px 0px 50px 0px;
+}
+
+.shadow {
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}

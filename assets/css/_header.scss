@@ -1,0 +1,59 @@
+@import "./variables";
+@import "./containers";
+
+.header {
+  height: 60px;
+  z-index: 100;
+}
+
+.header-logo {
+  width: auto;
+  @media screen and (min-width: $breakpoint-xs) {
+    height: 25px;
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    height: 35px;
+  }
+  @media screen and (min-width: $breakpoint-large) {
+    height: 50px;
+  }
+}
+
+.nav-links {
+  @media screen and (max-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.header-menu {
+  display: none;
+  @media screen and (max-width: $breakpoint-medium) {
+    display: initial;
+  }
+}
+
+.nav-item {
+  display: flex;
+  @include spacing(center, center);
+  height: 60px;
+  width: 60px;
+  color: $bodyText;
+  font-size: 22px;
+  &.hidden {
+    display: none;
+  }
+  cursor: pointer;
+}
+
+.mobile-menu {
+  height: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  &.expanded {
+    height: 100px;
+    opacity: 1;
+  }
+  @media screen and (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}

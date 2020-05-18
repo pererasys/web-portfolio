@@ -3,23 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="fonts/FontAwesome/css/all.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
-      rel="stylesheet"
+
+    <meta
+      name="og:title"
+      content="Andrew Perera - Developer, Designer, Student"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,900|Note+Sans+JP:100,300,400,500,700,900&display=swap"
+    <meta
+      name="og:image"
+      content="http://s3.amazonaws.com/pererasys.com/img/meta-image.png"
     />
-    <title>Andrew Perera</title>
+    <meta
+      property="og:image:secure_url"
+      content="https://s3.amazonaws.com/pererasys.com/img/meta-image.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="763" />
+    <meta property="og:image:height" content="521" />
+    <meta property="og:image:alt" content="Pererasys Logo" />
+    <meta name="og:description" content="Web portfolio." />
+
+    <meta property="og:url" content="http://www.pererasys.com" />
+    <meta
+      name="keywords"
+      content="software developer, developer, software, portfolio, resume"
+    />
+    <meta name="author" content="Andrew Perera" />
+    <link rel="icon" href="./favico.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/fonts/FontAwesome/css/all.css" />
+    <title>Andrew Perera - Developer, Designer, Student</title>
   </head>
   <body>
     <div class="section">
       <header class="header flexr j-between a-center">
-        <a class="branding" href="#">
-          <img class="header-logo" src="img/logo.png" />
+        <a class="branding" href="http://www.pererasys.com">
+          <img class="header-logo" src="assets/img/logo-white.png" />
         </a>
         <div class="nav-links flexr a-center">
           <a
@@ -79,12 +97,12 @@
     </div>
     <div class="section introduction flexc a-center">
       <div class="backdrop"></div>
-      <img src="img/airplane.png" class="plane right" />
-      <img src="img/airplane.png" class="plane left" />
+      <img src="assets/img/airplane.png" class="plane right" />
+      <img src="assets/img/airplane.png" class="plane left" />
       <div class="self fade-in">
         <div class="name flexr a-center m-v-1">
           <h1 class="me">
-            Andrew Perera.
+            Andrew Perera
           </h1>
           <div class="name-indicator flicker"></div>
         </div>
@@ -93,18 +111,27 @@
         </p>
       </div>
     </div>
-    <div class="section primary toolkit flexc">
+    <div class="section primary toolkit flexc a-center">
+      <h1 class="text-center">Here's a little about me!</h1>
+      <p class="about-me white-text text-center m-v-4">
+        I'm a 22 year old from Charleston, South Carolina, and got introduced to
+        the world of programming at the University of South Carolina. I'm
+        constantly learning and always looking for the best approach, and I
+        build highly scalable systems using only the right tools for the job.
+      </p>
+    </div>
+    <div class="section primary toolkit flexc a-center">
       <div class="flexr a-center">
-        <h1 class="white-text">My Toolbox</h1>
+        <h1>My Toolbox</h1>
         <i class="fas fa-tools m-h-2 white-text large-icon"></i>
       </div>
-      <p class="toolbox-info white-text text-center">
+      <p class="toolbox-info white-text text-center m-v-4">
         Hammers, screwdrivers, pliers, there might be a saw in there somewhere.
         These are tools I use on a daily basis, and have become my bread and
         butter.
       </p>
     </div>
-    <div class="skills flexr j-center a-center alt-background">
+    <div class="skills section flexr j-center a-center alt-background">
       <div class="skill-card flexc fade-in rounded shadow">
         <div class="skill-card-content">
           <div
@@ -226,11 +253,12 @@
     </div>
 
     <div class="section flexc white">
-      <p class="toolbox-info body-text text-center">
-        In addition to my work using these tools, I also have experience with
-        database schema design and various query languages.
+      <p class="toolbox-info body-text text-center m-v-4">
+        In addition to working with these technologies, I also have extensive
+        experience in database integration and writing efficient, complex
+        queries in various languages.
       </p>
-      <div class="databases flexr j-center rounded p-1 white shadow m-v-2">
+      <div class="databases flexr j-center rounded p-1 white shadow m-v-4">
         <div class="db flexc">
           <h3 class="db-header bottom-border p-v-2 primary-border">Neo4J</h3>
           <div class="db-content flexc j-between p-1">
@@ -238,7 +266,6 @@
               <p class="db-experience-section-header">Experience</p>
               <p class="db-experience">Cypher Query Language</p>
               <p class="db-experience">Schema Design</p>
-              <p class="db-experience">Efficient Query Design</p>
               <p class="db-experience">Efficient Batch Storage</p>
             </div>
             <div>
@@ -271,6 +298,7 @@
           <div class="db-content flexc j-between p-1">
             <div>
               <p class="db-experience-section-header">Experience</p>
+              <p class="db-experience">SQL</p>
               <p class="db-experience">Schema Design</p>
             </div>
             <div>
@@ -317,93 +345,17 @@
       <a href="pererasys@gmail.com" class="primary-text">Email Me</a>
     </div>
     -->
-    <footer class="footer p-3 flexr j-end a-center">
-      <p>
+    <footer class="footer p-3 flexr wrap j-center a-center">
+      <p class="footer-content white-text p-v-1 text-center">
+        Built and designed by me!
+      </p>
+      <p class="footer-content p-v-1 text-center">
         Andrew Perera
         <i class="far fa-copyright white-text copyright"></i> 2020
       </p>
     </footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="assets/js/jqueryStuff.js"></script>
   </body>
-  <script src="js/jquery.js"></script>
-  <script>
-    function isVisible(elem) {
-      var elementTop = elem.offset().top;
-      var elementBottom = elementTop + elem.outerHeight();
-      var viewportTop = $(window).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
-      return elementBottom > viewportTop && elementTop < viewportBottom;
-    }
-
-    function maybeStartSkillsAnimation() {
-      var $elem = $(".skills");
-
-      if (isVisible($elem)) {
-        var duration = 250;
-        $(".skill-card").each(function (i) {
-          var $item = $(this);
-          var $text = $(".toolbox-info");
-          $text.css({
-            opacity: 1,
-            transition: "opacity ease 2s",
-          });
-          setTimeout(function () {
-            $item.addClass("active");
-          }, duration * i);
-        });
-      }
-    }
-
-    function maybeStartNameAnimation() {
-      var $elem = $(".name");
-
-      if (isVisible($elem)) {
-        $elem.addClass("active");
-      }
-    }
-
-    function maybeStartDatabasesAnimation() {
-      var $elem = $(".databases");
-
-      if (isVisible($elem)) {
-        $elem.addClass("active");
-      }
-    }
-
-    $(document).ready(function () {
-      maybeStartNameAnimation();
-    });
-
-    $(window).scroll(function () {
-      maybeStartSkillsAnimation();
-      maybeStartDatabasesAnimation();
-    });
-
-    $("#mobile-menu-trigger").on("click", function () {
-      // Hide trigger
-      var $trigger = $(this);
-      $trigger.addClass("hidden");
-
-      // Show close trigger
-      var $close = $("#close-mobile-menu-trigger");
-      $close.removeClass("hidden");
-
-      // Expand menu
-      var $elem = $("#menu");
-      $elem.addClass("expanded");
-    });
-
-    $("#close-mobile-menu-trigger").on("click", function () {
-      // Hide close trigger
-      var $close = $(this);
-      $close.addClass("hidden");
-
-      // Show trigger
-      var $trigger = $("#mobile-menu-trigger");
-      $trigger.removeClass("hidden");
-
-      // Expand menu
-      var $elem = $("#menu");
-      $elem.removeClass("expanded");
-    });
-  </script>
 </html>

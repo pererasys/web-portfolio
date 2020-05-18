@@ -1,0 +1,130 @@
+@import "./fonts";
+@import "./variables";
+
+html.wf-loading * {
+  opacity: 0;
+}
+
+.large-icon {
+  font-size: 24px;
+}
+
+p {
+  margin: 0px;
+  font-family: $notesans;
+  font-size: 20px;
+  font-weight: 200;
+  color: $bodyText;
+  line-height: 32px;
+}
+
+.text {
+  color: $text;
+}
+
+.primary-text {
+  margin: 0px;
+  color: $primary;
+}
+
+.accent-text {
+  margin: 0px;
+  color: $accent;
+}
+
+.body-text {
+  color: $bodyText;
+}
+
+.white-text {
+  color: $white;
+}
+
+.black-text {
+  color: $black;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.green-text {
+  color: $green;
+}
+
+.orange-text {
+  color: $orange;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0px 10px 0px;
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 38px;
+  color: $text;
+}
+
+h2 {
+  margin: 10px 0px 10px 0px;
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: $text;
+}
+
+h3 {
+  margin: 5px 0px 5px 0px;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 24px;
+  color: $text;
+}
+
+h4 {
+  margin: 5px 0px 5px 0px;
+  font-family: $poppins;
+  font-weight: 500;
+  font-size: 18px;
+  color: $text;
+}
+
+h5 {
+  margin: 5px 0px 5px 0px;
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 16px;
+  color: $text;
+}
+
+h6 {
+  margin: 5px 0px 5px 0px;
+  font-family: $poppins;
+  font-weight: 600;
+  font-size: 14px;
+  color: $text;
+  text-transform: uppercase;
+}
+
+.upper-case {
+  text-transform: uppercase !important;
+}
+
+.body-text-1 {
+  font-family: $notesans;
+  font-size: 16px;
+  color: $bodyText;
+}
+
+.body-text-2 {
+  font-family: $notesans;
+  font-size: 14px;
+  color: $bodyText;
+}

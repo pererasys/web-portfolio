@@ -1,0 +1,155 @@
+@import "./variables";
+@import "./animations";
+@import "./fonts";
+
+.introduction {
+  position: relative;
+  height: 600px;
+  background-image: url("../img/curvelg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  @media screen and (min-width: $breakpoint-xs) {
+    background-size: 100% 100px;
+  }
+  @media screen and (min-width: $breakpoint-large) {
+    background-size: 100% 200px;
+  }
+}
+
+.self {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  text-align: center;
+  z-index: 100;
+}
+
+.name {
+  transform: translateY(-50px);
+  &.active {
+    transition: transform ease 1.5s;
+    transform: translateY(0);
+  }
+}
+
+.me {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: 700;
+  margin-right: 2.5px;
+  @media screen and (min-width: $breakpoint-medium) {
+    font-size: 52px;
+  }
+}
+
+.name-indicator {
+  height: 32px;
+  width: 1.5px;
+  border-radius: 50px;
+  margin-bottom: 7.5px;
+  background-color: $text;
+  animation-delay: 1.5s;
+  @media screen and (min-width: $breakpoint-medium) {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+.my-story {
+  font-size: 20px;
+  font-weight: 200;
+  color: #999999;
+  line-height: 32px;
+}
+
+@keyframes moveClouds {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  bottom: 0;
+  background-image: url("../img/clouds.png");
+  background-repeat: repeat;
+  background-position: left bottom;
+  background-size: cover;
+  animation: moveClouds 180s linear infinite;
+  z-index: 0;
+  @media (min-width: $breakpoint-xs) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 100px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 100px;
+  }
+}
+
+@keyframes movePlaneLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes movePlaneRight {
+  0% {
+    left: -10%;
+    visibility: visible;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+.plane {
+  position: absolute;
+  height: 10px;
+  width: 25px;
+
+  @media (min-width: $breakpoint-xs) {
+    &.left {
+      left: 100%;
+      bottom: 175px;
+      animation: movePlaneLeft 240s linear infinite;
+    }
+    &.right {
+      left: -10%;
+      visibility: hidden;
+      bottom: 125px;
+      animation: movePlaneRight 240s linear infinite;
+      animation-delay: 10s;
+      transform: rotate3d(0, 1, 0, 3.142rad);
+    }
+  }
+  @media (min-width: $breakpoint-medium) {
+    &.left {
+      left: 100%;
+      bottom: 250px;
+      animation: movePlaneLeft 240s linear infinite;
+    }
+    &.right {
+      left: -10%;
+      visibility: hidden;
+      bottom: 300px;
+      animation: movePlaneRight 240s linear infinite;
+      animation-delay: 10s;
+      transform: rotate3d(0, 1, 0, 3.142rad);
+    }
+  }
+}
+
+.about-me {
+  max-width: 750px;
+}
